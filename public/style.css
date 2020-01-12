@@ -64,6 +64,14 @@ p{
     letter-spacing: 0.2vw;
 }
 
+.form-style{
+    align-items: center;
+}
+
+.self-align{
+    align-self: center;
+}
+
 .center {
     text-align: center;
 }
@@ -84,9 +92,18 @@ p{
     margin: 0 0 30px 0;
 }
 
+.padding-thirty{
+    padding: 0, 30px, 0, 30px;
+}
+
 .margin-bottom{
     margin: 0 0 90px 0;
 }
+
+.margin-suggestion{
+    margin: 0 30px 90px 30px;
+}
+
 .video-container {
     text-align: center;
 }
