@@ -50,19 +50,40 @@
             </div>
         </div>
     </div>
+     <divclass="margin-bottom" class="margin-bottom">
+        <div class="margin-ninety">
+            <p class="subtitle font-twenty center">
+                UPLOAD YOUR VIDEO
+                <form enctype="multipart/form-data" method="post" action="/upload">
+                    <input type="file" accept=".mp4"  id="upload-file" name="uploadFile" value="Upload-File" required>
+                    <input type="submit" id="submit-file" name="Submit-File" value="Upload">
+                    </form>
+            </p>
+            <button type="button" class="btn btn-dark" id="tester">Tester</button>
+        </div>
+        <div>
+            <p class="margin-thirty great-vibes-font center font-twenty">
+                instant feedback
+            </p>
+        </div>
+        <div class="margin-thirty">
+            <!-- PLACE INPUT HERE -->
+        </div>
+    </div class="margin-bottom">
     <div class="margin-bottom">
         <div class="margin-ninety">
             <p class="subtitle font-twenty center">SUGGESTIONS</p>
         </div>
         <div class="margin-ninety">
             <p class="font-ten center">- suggestions appear here -</p>
+            <p class="font-ten center" id="nlp-text"></p>
+            <p class="font-ten center" id="nlp-score"></p>
         </div>
     </div>
     <div class="margin-bottom-thirty">
         <p class="font-five center">
-            created by Anemme ___, Catherine Chen and Maya McKeown
+            created by Anemmeabasi Bassey, Catherine Chen and Maya McKeown
         </p>
-    </div>
     <script src="script.js"></script>
     <script>
         window.useThisGithubPath = 'muaz-khan/Ffmpeg.js';
