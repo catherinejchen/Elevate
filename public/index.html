@@ -4,6 +4,19 @@
 <head>
     <title>Elevate</title>
     <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" 
+          integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" 
+          crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+          integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+          crossorigin="anonymous"></script>
+  <link rel="stylesheet" 
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+        crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+          integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
+          crossorigin="anonymous"></script>
     <!-- Include Video.js stylesheet (https://videojs.com/) -->
     <link href="../node_modules/video.js/dist/video-js.min.css" rel="stylesheet">
     <!-- Style of VideoJS -->
@@ -16,7 +29,6 @@
     <!-- script used for audio/video/gif recording -->
     <script src="https://cdn.webrtc-experiment.com/RecordRTC.js"> </script>
     <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
-    <script src="https://www.webrtc-experiment.com/EBML.js"></script> <!-- ../libs/DBML.js -->
 </head>
 
 <body class="padding-zero">
@@ -36,38 +48,60 @@
             <div class="video-container"> <video autoplay=true id="videoElement"></video></div>
             <div class="button-grid margin-thirty">
                 <div class="button-grid__item button-grid__item--1">
-                    <button class="button" id="btn-start-recording"
-                        style="background: #2ecc71; color: #fff">Start</button>
+                    <button class="button" id="record-video" style="background: #2ecc71; color: #fff">Start</button>
                 </div>
                 <div class="button-grid__item button-grid__item--2">
-                    <button class="button" id="btn-stop-recording" disabled>Stop</button>
+                    <button class="button" id="stop-recording-video" disabled>Stop</button>
                 </div>
-            </div>
-
+            </div> 
+            
             <section class="experiment">
             </section>
             <div class="inner">
             </div>
         </div>
     </div>
+    <divclass="margin-bottom" class="margin-bottom">
+        <div class="margin-ninety">
+            <p class="subtitle font-twenty center">
+                UPLOAD YOUR VIDEO
+                <form enctype="multipart/form-data" method="post" action="/upload">
+                    <input type="file" accept=".mp4"  id="upload-file" name="uploadFile" value="Upload-File" required>
+                    <input type="submit" id="submit-file" name="Submit-File" value="Upload">
+                    </form>
+            </p>
+            <button type="button" class="btn btn-dark" id="tester">Tester</button>
+        </div>
+        <div>
+            <p class="margin-thirty great-vibes-font center font-twenty">
+                instant feedback
+            </p>
+        </div>
+        <div class="margin-thirty">
+            <!-- PLACE INPUT HERE -->
+        </div>
+    </div class="margin-bottom">
     <div class="margin-bottom">
         <div class="margin-ninety">
             <p class="subtitle font-twenty center">SUGGESTIONS</p>
         </div>
         <div class="margin-ninety">
             <p class="font-ten center">- suggestions appear here -</p>
+            <p class="font-ten center" id="nlp-text"></p>
+            <p class="font-ten center" id="nlp-score"></p>
         </div>
     </div>
     <div class="margin-bottom-thirty">
         <p class="font-five center">
-            created by Anemme ___, Catherine Chen and Maya McKeown
+            created by Anemmeabasi Bassey, Catherine Chen and Maya McKeown
         </p>
     </div>
     <script src="script.js"></script>
+    <script src="index.js"></script>
     <script>
         window.useThisGithubPath = 'muaz-khan/Ffmpeg.js';
     </script>
     <script src="https://cdn.webrtc-experiment.com/commits.js" async> </script>
-</body>
+</body> 
 
 </html>
