@@ -1,0 +1,14 @@
+Needed comands:
+
+ffmpeg -i ./uploads/carried.mp4 ./resources/test.wav
+
+gsutil cp ./resources/test.wav gs://elevate-bucket
+
+npm install --save @google-cloud/speech
+
+npm install --save @google-cloud/language
+
+export GOOGLE_APPLICATION_CREDENTIALS=/Users/mayamckeown/Desktop/code/elevator-master/My\ First\ Project-792d2e38c404.json 
+
+gcloud init
+

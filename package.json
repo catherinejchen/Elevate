@@ -1,0 +1,23 @@
+{
+  "name": "sh4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "@google-cloud/language": "^3.7.0",
+    "@google-cloud/speech": "^3.5.4",
+    "express": "^4.16.2",
+    "express-fileupload": "^0.4.0",
+    "javascript-obfuscator": "^0.14.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": "8"
+  }
+}

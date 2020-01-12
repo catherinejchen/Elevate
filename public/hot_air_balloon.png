@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Elevate</title>
+    <meta charset="utf-8">
+    <!-- Include Video.js stylesheet (https://videojs.com/) -->
+    <link href="../node_modules/video.js/dist/video-js.min.css" rel="stylesheet">
+    <!-- Style of VideoJS -->
+    <link href="../dist/css/videojs.record.css" rel="stylesheet">
+    <!-- CUSTOM CSS-->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Great Vibes' rel='stylesheet'>
+
+    <!-- script used for audio/video/gif recording -->
+    <script src="https://cdn.webrtc-experiment.com/RecordRTC.js"> </script>
+    <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+    <script src="https://www.webrtc-experiment.com/EBML.js"></script> <!-- ../libs/DBML.js -->
+</head>
+
+<body class="padding-zero">
+    <div id="background">
+        <div class="banner-grid">
+            <p class="title font-thirty center">ELEVATE</p>
+        </div>
+    </div>
+    <div class="background-alt">
+        <div class="padding-ninety">
+            <div>
+                <p class="great-vibes-font center font-twenty">- start recording below -</p>
+            </div>
+            <div class="margin-ninety">
+            </div>
+            <br>
+            <div class="video-container"> <video autoplay=true id="videoElement"></video></div>
+            <div class="button-grid margin-thirty">
+                <div class="button-grid__item button-grid__item--1">
+                    <button class="button" id="btn-start-recording"
+                        style="background: #2ecc71; color: #fff">Start</button>
+                </div>
+                <div class="button-grid__item button-grid__item--2">
+                    <button class="button" id="btn-stop-recording" disabled>Stop</button>
+                </div>
+            </div>
+
+            <section class="experiment">
+            </section>
+            <div class="inner">
+            </div>
+        </div>
+    </div>
+    <div class="margin-bottom">
+        <div class="margin-ninety">
+            <p class="subtitle font-twenty center">SUGGESTIONS</p>
+        </div>
+        <div class="margin-ninety">
+            <p class="font-ten center">- suggestions appear here -</p>
+        </div>
+    </div>
+    <div class="margin-bottom-thirty">
+        <p class="font-five center">
+            created by Anemme ___, Catherine Chen and Maya McKeown
+        </p>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        window.useThisGithubPath = 'muaz-khan/Ffmpeg.js';
+    </script>
+    <script src="https://cdn.webrtc-experiment.com/commits.js" async> </script>
+</body>
+
+</html>
